@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  transition: all 350ms ease;
+}
+
+.appContainer {
+  background: url("./images/bg-desktop-dark.jpg") no-repeat fixed;
+  background-color: hsl(235, 21%, 11%);
+  color: hsl(234, 39%, 85%);
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+}
+
+.appContainer.lightTheme {
+  background: url("./images/bg-desktop-light.jpg") no-repeat fixed;
+  background-size: contain;
+  color: hsl(235, 19%, 35%);
+  width: 100vw;
+  height: 100vh;
+}
+
+.App {
+  max-width: 37%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) {
+  .appContainer {
+    background: url("./images/bg-mobile-dark.jpg") no-repeat fixed;
+  }
+
+  .appContainer.lightTheme {
+    background: url("./images/bg-mobile-light.jpg") no-repeat fixed;
+  }
+
+  .App {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .appContainer {
+    background: url("./images/bg-mobile-dark.jpg") no-repeat fixed;
+    background-color: hsl(235, 21%, 11%);
+    color: hsl(234, 39%, 85%);
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .appContainer.lightTheme {
+    background: url("./images/bg-mobile-light.jpg") no-repeat fixed;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+  }
+  .App {
+    max-width: 90%;
+  }
+}
+
+.attribution {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 80%;
+  text-align: center;
+  color: hsl(236, 9%, 61%);
+}

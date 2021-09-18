@@ -1,0 +1,133 @@
+.todoItem {
+  margin-top: 30px;
+}
+
+.itemContainer {
+  color: hsl(234, 39%, 85%);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: hsl(235, 24%, 19%);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 1px solid hsl(237, 14%, 26%);
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0),
+    0px -2px 0px 0px rgba(0, 0, 0, 0), 2px 0px 15px -4px rgba(0, 0, 0, 0),
+    -2px 0px 15px -4px rgba(0, 0, 0, 0.1);
+  transition: all 350ms ease;
+}
+
+.itemContainer.lightTheme {
+  background-color: hsl(0, 0%, 98%);
+  border-bottom: 1px solid hsl(233, 11%, 84%);
+  color: hsl(235, 19%, 35%);
+}
+
+.itemContainer.lightTheme:hover {
+  box-shadow: 0px 0px 7px 1px hsl(233, 11%, 84%);
+  border-color: hsl(233, 11%, 84%);
+}
+
+.itemContainer.lightTheme s {
+  color: hsl(233, 11%, 84%);
+}
+
+.itemContainer.lightTheme .checkmark {
+  border-color: hsl(236, 33%, 92%);
+}
+
+.itemContainer:hover {
+  box-shadow: 0px 0px 7px 1px hsl(235, 21%, 11%);
+  transform: translateY(-0.6px);
+  border-color: hsl(235, 24%, 19%);
+}
+
+.todoWrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.todoText {
+  width: 100%;
+}
+
+.todoText s {
+  color: hsl(233, 14%, 35%);
+}
+
+.todoWrap img {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.itemContainer .checkImg {
+  visibility: hidden;
+}
+
+.itemContainer:hover .checkImg,
+.checkImg.checked {
+  visibility: visible;
+}
+
+.itemContainer .image {
+  visibility: hidden;
+  /* opacity: 0; */
+}
+
+.itemContainer:hover .image {
+  visibility: visible;
+  /* opacity: 1; */
+}
+
+/* Todo Footer */
+.todoFooter {
+  height: 50px;
+  background-color: hsl(235, 24%, 19%);
+  padding: 20px 20px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 15px -4px rgba(0, 0, 0, 0.1),
+    0px -2px 0px 0px rgba(0, 0, 0, 0), 2px 0px 15px -4px rgba(0, 0, 0, 0),
+    -2px 0px 15px -4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: hsl(234, 11%, 52%);
+  /* z-index: -1; */
+  text-align: start;
+}
+
+.todoFooter.lightTheme {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(236, 9%, 61%);
+}
+
+.todoFooter.lightTheme span:hover,
+.todoFooter.lightTheme .clearCompleted:hover {
+  color: hsl(235, 19%, 35%);
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories span {
+  margin-right: 15px;
+}
+
+.categories span.clicked,
+.categories span:hover,
+.clearCompleted:hover {
+  color: hsl(220, 98%, 61%);
+  cursor: pointer;
+}
+
+.items span {
+  color: hsl(220, 98%, 61%);
+}

@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15%;
+  padding-bottom: 30px;
+}
+
+.title h1 {
+  letter-spacing: 15px;
+  font-weight: 700;
+  color: hsl(236, 33%, 92%);
+}
+
+.theme img {
+  cursor: pointer;
+}

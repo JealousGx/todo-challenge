@@ -1,0 +1,67 @@
+.todoInput {
+  display: flex;
+  background-color: hsl(235, 24%, 19%);
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  border-radius: 4px;
+  margin-top: 12px;
+  box-shadow: 0 0px 12px 1px rgba(0, 0, 0, 0.3);
+}
+
+.todoInput.lightTheme {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.checkbox {
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 1px solid hsl(237, 14%, 26%);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkmark.lightTheme {
+  border-color: hsl(236, 33%, 92%);
+}
+
+.checkmark:hover,
+.checkmark.checked {
+  background: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.todoInput .input {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.todoInput input {
+  width: 100%;
+  font-size: 18px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: hsl(234, 39%, 85%);
+}
+
+.todoInput.lightTheme input {
+  color: hsl(235, 19%, 35%);
+}
+
+.todoInput input::placeholder {
+  color: hsl(234, 11%, 52%);
+}
+
+.todoInput.lightTheme input::placeholder {
+  color: hsl(236, 9%, 61%);
+}
