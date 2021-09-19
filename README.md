@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Live site](blob:https://vercel.com/0c3f3421-34b0-4098-9d5c-a1bb10568a09)
+![Live site](https://raw.githubusercontent.com/JealousGx/todo-challenge/master/live-demo.png)
 
 ### Links
 
