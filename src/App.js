@@ -4,7 +4,6 @@ import Header from "./components/header/Header";
 import TodoInput from "./components/TodoInput/TodoInput";
 import TodoItem from "./components/TodoList/TodoItem";
 
-// eslint-disable
 function App() {
   const [dark, setDark] = useState(true);
 
@@ -14,6 +13,7 @@ function App() {
         <Header dark={dark} setDark={setDark} />
         <TodoInput dark={dark} />
         <TodoItem dark={dark} />
+        {/* eslint-disable */}
         <div class="attribution">
           Challenge by{" "}
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
@@ -25,10 +25,10 @@ function App() {
           </a>
           .
         </div>
+        {/* eslint-enable */}
       </div>
     </div>
   );
 }
-// eslint-enable
 
 export default App;
