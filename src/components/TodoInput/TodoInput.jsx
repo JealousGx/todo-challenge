@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useEffect } from "react/cjs/react.development";
+import { useState, useEffect } from "react";
 import { todoDB } from "../../firebase";
 import check from "../../images/icon-check.svg";
 import "./TodoInput.css";
@@ -32,7 +31,6 @@ const TodoInput = ({ dark }) => {
 
   useEffect(() => {
     todo && todoDB.collection("todos").add(todo);
-    document.getElementsByClassName("todoText").text = "";
   }, [todo]);
 
   return (
